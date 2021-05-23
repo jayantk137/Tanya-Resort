@@ -188,8 +188,8 @@
     text-decoration: none;
   }
   .footer-logo{
-    width: 31.513%;
-    margin-left: 184px;
+    width: 22.513%;
+    margin-left: 11%;
     margin-top: 10px;
   }
   #footer{
@@ -223,7 +223,6 @@
     padding-bottom: 25px;
   }
 .footer-nav{
-    margin-left: -128px;
     margin-top: 10px;
 }
 .footer-nav ul{
@@ -235,9 +234,9 @@ ul{
   overflow: hidden;
 }
 .site-credit{
-  float: right;
-  margin-left: 300px;
+  margin-left: auto;
   margin-top: 10px;
+  margin-right: 15%;
 }
 .site-credit h6{
   padding-bottom: 10px;
@@ -252,16 +251,87 @@ ul{
   text-transform: uppercase;
   padding: 14px 0;
 }
-.socials-links{
-  float: left;
-}
-.socials-links a {
+
+#socials-links a {
   display: block;
   width: 26px;
   height: 26px;
   text-decoration: none;
 }
-.socials-links ul li svg{
-  list-style: none;
-    display: inline;
+ul#socials-links li{
+  display:inline;
+  list-style-type:none;
+  padding:4px;
+  margin-left: -35px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .containerflex{
+      display: flex;
+      flex-direction: column;
+    }
+    .containerflex .column{
+      width: 95%;
+    }
+    .para p{
+      font-size: 16px;
+    }
+    .contactandview {
+      display: flex;
+      flex-direction: column;
+    }
+    .input-field{
+      width: 101%;
+    }
+    .events .row{
+      display: flex;
+      flex-direction: column;
+    }
+    .events .row .col-4{
+      margin-top: 15px;
+      max-width: 100%;
+    }
+    #footer .containerflex{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .footer-logo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-left: 0%;
+    }
+    .footer-logo address {
+        text-align: center;
+    }
+    .footer-logo img{
+      width: 60px;
+    }
+    
+    .footer-nav{
+      margin-top:10px;
+      padding-left: 3%;
+    }
+    
+    .tag{
+      margin-top: -500px;
+      margin-left: 30px;
+    }
+    .site-credit{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-bottom: 0%;
+    }
+    .cont{
+      width: 333px;
+      margin-top: 486px;
+      margin-left: 11px;
+    }
+    
 }
